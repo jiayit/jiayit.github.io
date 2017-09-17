@@ -1,4 +1,5 @@
-#搭建自己的博客
+# 搭建自己的博客
+
 一、准备工作
 
 - 创建Github的账户 
@@ -15,7 +16,7 @@
 
 **步骤一**  安装hexo
 
-	$  npm install -g hexo
+	$ npm install -g hexo
 
    小tips：安装node.js要配置好环境变量，使其命令可以全局使用
 
@@ -23,12 +24,12 @@
 
 新建一个文件夹 在该文件夹下右键git bash 打开命令行
 
-	$  hexo init
+	$ hexo init
    
 该文件夹下会生成一些目录，然后
 
-    $  hexo gernate //可缩写成 hexo g
-	$  hexo server  //可缩写成 hexo s
+    $ hexo gernate //可缩写成 hexo g
+	$ hexo server  //可缩写成 hexo s
 
 hexo server命令是启动本地服务，打开[http://localhost:4000](http://localhost:4000)可看到生成的博客内容
 
@@ -36,9 +37,30 @@ hexo server命令是启动本地服务，打开[http://localhost:4000](http://lo
 
 我用的是 [hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia)主题
 
-**步骤一**  下载源码
+**步骤一**	下载源码
 
-	$ cd /d/hexo/themes/
+	$ cd /d/hexo/themes/
 	$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
 	
 **步骤二**  修改_config.yml
+
+将里面的
+	
+	theme: landscape 改为 theme: yillia
+**步骤三** 上传github
+
+首先配置好了ssh key
+接下来修改_config.yml 中deploy的部分
+
+	deploy:
+		type: git
+		repository: git@github.com:`username`/`username`.github.io.git
+		branch: master
+
+然后安装插件
+
+	$ npm install hexo-deployer-git --save
+
+最后提交到远程库
+	
+	$ hexo d
