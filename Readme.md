@@ -40,7 +40,7 @@ hexo server命令是启动本地服务，打开[http://localhost:4000](http://lo
 **步骤一**	下载源码
 
 	$ cd /d/hexo/themes/
-	$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
+	$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
 	
 **步骤二**  修改_config.yml
 
