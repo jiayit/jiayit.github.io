@@ -6,18 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://jiayit.github.io">
-  <title>相册 | Jiayi的博客</title>
+  <title>Jiayi的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="照片 	   	图片来自instagram，正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild(">
+  <meta name="description" content="搭建自己的博客一、准备工作  创建Github的账户   安装Node.js、Git、  在本地配置好Git 参考链接   二、搭建Github博客 1、新建一个名为 username.github.io的仓库 其中username是你的用户名 2、使用hexo（hexo和Jekyll 都是静态博客框架，有很多好看的模板和主题） 步骤一  安装hexo $ npm install -g hexo">
 <meta property="og:type" content="website">
-<meta property="og:title" content="相册">
-<meta property="og:url" content="http://jiayit.github.io/photos/index.html">
+<meta property="og:title" content="Jiayi的博客">
+<meta property="og:url" content="http://jiayit.github.io/Readme.html">
 <meta property="og:site_name" content="Jiayi的博客">
-<meta property="og:description" content="照片 	   	图片来自instagram，正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild(">
-<meta property="og:updated_time" content="2017-09-07T13:43:54.000Z">
+<meta property="og:description" content="搭建自己的博客一、准备工作  创建Github的账户   安装Node.js、Git、  在本地配置好Git 参考链接   二、搭建Github博客 1、新建一个名为 username.github.io的仓库 其中username是你的用户名 2、使用hexo（hexo和Jekyll 都是静态博客框架，有很多好看的模板和主题） 步骤一  安装hexo $ npm install -g hexo">
+<meta property="og:updated_time" content="2017-09-17T05:54:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="相册">
-<meta name="twitter:description" content="照片 	   	图片来自instagram，正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild(">
+<meta name="twitter:title" content="Jiayi的博客">
+<meta name="twitter:description" content="搭建自己的博客一、准备工作  创建Github的账户   安装Node.js、Git、  在本地配置好Git 参考链接   二、搭建Github博客 1、新建一个名为 username.github.io的仓库 其中username是你的用户名 2、使用hexo（hexo和Jekyll 都是静态博客框架，有很多好看的模板和主题） 步骤一  安装hexo $ npm install -g hexo">
   
     <link rel="alternative" href="/atom.xml" title="Jiayi的博客" type="application/atom+xml">
   
@@ -157,43 +157,54 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-photos" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      相册
-    </h1>
-  
-
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <link rel="stylesheet" href="./ins.css">
-<div class="photos-btn-wrap">
-	<a class="photos-btn active" href="javascript:void(0)" target="_blank" rel="external">照片</a>
-	<!--a class="photos-btn" target="_blank" href="http://litten.me/gallery/">摄影</a-->
-</div>
-<div class="instagram itemscope">
-	<a href="https://www.instagram.com/jia_yi_t/" target="_blank" class="open-ins">图片来自instagram，正在加载中…</a>
-</div>
-<script>
-  (function() {
-    var loadScript = function(path) {
-      var $script = document.createElement('script')
-      document.getElementsByTagName('body')[0].appendChild($script)
-      $script.setAttribute('src', path)
-    }
-    setTimeout(function() {
-      loadScript('./ins.js')
-    }, 0)
-  })()
-</script>
-
+        <h1 id="搭建自己的博客"><a href="#搭建自己的博客" class="headerlink" title="搭建自己的博客"></a>搭建自己的博客</h1><p>一、准备工作</p>
+<ul>
+<li><p>创建Github的账户 </p>
+</li>
+<li><p>安装Node.js、Git、</p>
+</li>
+<li><p>在本地配置好Git <a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">参考链接</a></p>
+</li>
+</ul>
+<p>二、搭建Github博客</p>
+<p>1、新建一个名为 username.github.io的仓库 其中username是你的用户名</p>
+<p>2、使用hexo（hexo和Jekyll 都是静态博客框架，有很多好看的模板和主题）</p>
+<p><strong>步骤一</strong>  安装hexo</p>
+<pre><code>$ npm install -g hexo
+</code></pre><p>   小tips：安装node.js要配置好环境变量，使其命令可以全局使用</p>
+<p><strong>步骤二</strong>  初始化</p>
+<p>新建一个文件夹 在该文件夹下右键git bash 打开命令行</p>
+<pre><code>$ hexo init
+</code></pre><p>该文件夹下会生成一些目录，然后</p>
+<pre><code>$ hexo gernate //可缩写成 hexo g
+$ hexo server  //可缩写成 hexo s
+</code></pre><p>hexo server命令是启动本地服务，打开<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>可看到生成的博客内容</p>
+<p>3、修改主题</p>
+<p>我用的是 <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">hexo-theme-yilia</a>主题</p>
+<p><strong>步骤一</strong>    下载源码</p>
+<pre><code>$ cd /d/hexo/themes/
+$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
+</code></pre><p><strong>步骤二</strong>  修改_config.yml</p>
+<p>将里面的</p>
+<pre><code>theme: landscape 改为 theme: yillia
+</code></pre><p><strong>步骤三</strong> 上传github</p>
+<p>首先配置好了ssh key<br>接下来修改_config.yml 中deploy的部分</p>
+<pre><code>deploy:
+    type: git
+    repository: git@github.com:`username`/`username`.github.io.git
+    branch: master
+</code></pre><p>然后安装插件</p>
+<pre><code>$ npm install hexo-deployer-git --save
+</code></pre><p>最后提交到远程库</p>
+<pre><code>$ hexo d
+</code></pre><p>小tips：如果遇到问题可以用clean命令</p>
+<pre><code>$ hexo clean
+</code></pre>
       
 
       
@@ -251,7 +262,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://jiayit.github.io/photos/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://jiayit.github.io/Readme.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -281,6 +292,23 @@
 </aside>
 
 
+
+  
+  
+  
+
+  
+  <div id="SOHUCS" sid="" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = "true"; 
+var conf = "true"; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("//changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+  
+
+  
 
 
           </div>
